@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  - GlassFloor
+  - PS_Force_Red
+  - PS_Force_Green
+  - PS_Force_Orange
+  - PS_Bullet_Red
+  - PS_Bullet_Green
+  - PS_Bullet_Orange
+  - Artefact
+  - Probe
+  - Obstacles
+  - Environment
+  - Platforms
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Stars
+  - Water
+  - UI
+  - Probe
+  - 3D_UI
+  - Ground
+  - Pyramid
+  - GlassFloor
+  - Platform
+  - Column
+  - Stab
+  - Environment
+  - Enemy
+  - Artefact
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

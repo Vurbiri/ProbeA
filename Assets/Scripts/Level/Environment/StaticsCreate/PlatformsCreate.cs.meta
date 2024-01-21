@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 5adc70203b1bc2147827a1b72f430ac9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _physicMaterial: {fileID: 13400000, guid: e04ea4f25426d8d4fab56456197bda09, type: 2}
+  - _containerCollider: {instanceID: 0}
+  - _material: {fileID: 2100000, guid: 9459c13a0e9084f48a4f6f324d0d8feb, type: 2}
+  - _materialUpperFloor: {fileID: 2100000, guid: b059e29d070ecc64da2ab3ee085c146a,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

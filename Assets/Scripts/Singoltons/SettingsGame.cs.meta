@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d916e16a16da62f47ae8ef8d95711869
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _avatarGuest: {fileID: 2800000, guid: 4dc7588d8c059ad4fbb962369d53654c, type: 3}
+  - _avatarAnonym: {fileID: 2800000, guid: 77b1ed2461573c84caa8d61e26e2b0aa, type: 3}
+  - _audioMixer: {fileID: 24100000, guid: d0821e0503ff19940a73663f3399b719, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

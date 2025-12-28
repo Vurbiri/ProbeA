@@ -7,12 +7,17 @@ public class JsonToCookies : SaveLoadJsonTo
     private string _key;
     private UtilityJS _utilityJS;
 
-    public override bool IsValid => UtilityJS.InstanceF.IsCookies();
+#if UNITY_EDITOR
+    public override bool IsValid => false;
+#else
+    public override bool IsValid => UtilityJS.Instance.IsCookies();
+#endif
+
 
     public async override UniTask<bool> Initialize(string key)
     {
         _key = key;
-        _utilityJS = UtilityJS.InstanceF;
+        _utilityJS = UtilityJS.Instance;
 
         string json;
 

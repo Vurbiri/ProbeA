@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 0
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 0.5
+  m_ScrollSensitivity: 3
   m_Viewport: {fileID: 530309768}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 896706253}
@@ -6449,7 +6449,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1200, y: 165}
+  m_SizeDelta: {x: 980, y: 165}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1389547570
 MonoBehaviour:
@@ -7245,9 +7245,6 @@ MonoBehaviour:
     _otherActions:
       m_PersistentCalls:
         m_Calls: []
-  _keyGuestName: Guest
-  _avatarGuest: {fileID: 2800000, guid: 4dc7588d8c059ad4fbb962369d53654c, type: 3}
-  _avatar: {fileID: 1352818572}
   _name: {fileID: 1365478647}
 --- !u!1 &1467872821
 GameObject:
@@ -9818,7 +9815,7 @@ PrefabInstance:
     - target: {fileID: 7139674712027844974, guid: 13b8654751e6c2f4dbf20ba94831da96,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 825
+      value: 785
       objectReference: {fileID: 0}
     - target: {fileID: 7139674712027844974, guid: 13b8654751e6c2f4dbf20ba94831da96,
         type: 3}

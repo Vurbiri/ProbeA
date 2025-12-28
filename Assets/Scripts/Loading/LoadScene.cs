@@ -2,7 +2,6 @@ using Cysharp.Threading.Tasks;
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static System.Collections.Specialized.BitVector32;
 
 public class LoadScene 
 {
@@ -24,9 +23,9 @@ public class LoadScene
             ProgressAsync().Forget();
         }
 
-        async UniTaskVoid ProgressAsync()
+        async UniTask ProgressAsync()
         {
-            while (!_asyncOperation.isDone)
+            while (!_asyncOperation.isDone && EventProgress != null)
             {
                 Progress = _asyncOperation.progress * 1.11f;
                 EventProgress.Invoke(Progress);

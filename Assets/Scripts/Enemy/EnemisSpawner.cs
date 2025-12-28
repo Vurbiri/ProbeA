@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.AudioSettings;
 
 public class EnemiesSpawner : MonoBehaviour
 {
@@ -150,8 +149,10 @@ public class EnemiesSpawner : MonoBehaviour
     [System.Serializable]
     private class EnemyCreateType
     {
+#pragma warning disable 649
         public EnemyType type;
         public int priority;
         public Enemy prefab;
+#pragma warning restore 649
     }
 }

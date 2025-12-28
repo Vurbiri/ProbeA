@@ -1,14 +1,11 @@
 #if UNITY_EDITOR
 
-using Cysharp.Threading.Tasks;
 using System.IO;
 using UnityEngine;
 
 public partial class UtilityJS
 {
-    public bool IsMobile => true;
-
-    public UniTask<bool> IsAccelerometer() => UniTask.RunOnThreadPool(() => true);
+    public bool IsMobile => false;
 
     public void Log(string message) => Debug.Log(message);
     public void Error(string message) => Debug.LogError(message);

@@ -7,12 +7,16 @@ public class JsonToLocalStorage : SaveLoadJsonTo
     private string _key;
     private UtilityJS _utilityJS;
 
-    public override bool IsValid => UtilityJS.InstanceF.IsStorage();
+#if UNITY_EDITOR
+    public override bool IsValid => false;
+#else
+    public override bool IsValid => UtilityJS.Instance.IsStorage();
+#endif
 
     public async override UniTask<bool> Initialize(string key)
     {
         _key = key;
-        _utilityJS = UtilityJS.InstanceF;
+        _utilityJS = UtilityJS.Instance;
 
         string json;
 

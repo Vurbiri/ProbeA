@@ -1,21 +1,13 @@
-using Cysharp.Threading.Tasks;
-
-public partial class UtilityJS : Singleton<UtilityJS>
+public partial class UtilityJS
 {
+    private static readonly UtilityJS s_instance = new();
+
+    public static UtilityJS Instance => s_instance;
+
+    private UtilityJS() { }
+
 #if !UNITY_EDITOR
     public bool IsMobile => IsMobileUnityJS();
-
-    public async UniTask<bool> IsAccelerometer()
-    {
-        taskEndIsAccelerometer?.TrySetResult(false);
-        taskEndIsAccelerometer = new();
-
-        IsAccelerometerJS();
-        bool isIsAccelerometer = await taskEndIsAccelerometer.Task;
-        taskEndIsAccelerometer = null; 
-
-        return isIsAccelerometer;
-    }
 
     public void Log(string message) => LogJS(message);
     public void Error(string message) => ErrorJS(message);

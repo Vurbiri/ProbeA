@@ -182,7 +182,7 @@ Material:
     - _SPECULAR: 0
     - _SPECULARHIGHLIGHTS_OFF: 1
     - _Seam_Ton: 0.1
-    - _Seed: 6821.9736
+    - _Seed: 4135.7617
     - _Shading: 0.35
     - _ShadingStrength: 0.4
     - _SidesTracery: 6
@@ -209,7 +209,7 @@ Material:
     - _Base_Offset: {r: 0, g: 0, b: 0, a: 0}
     - _Base_Tailing: {r: 4, g: 4, b: 0, a: 0}
     - _Border: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.50980395, g: 0.50980395, b: 0.29411766, a: 1}
+    - _Color: {r: 0.13725491, g: 0.60784316, b: 0.43529412, a: 1}
     - _ColorBase: {r: 0.6509804, g: 0.6509804, b: 0.3529412, a: 1}
     - _ColorBaseOne: {r: 0.6509804, g: 0.6509804, b: 0.3529412, a: 1}
     - _ColorSeam: {r: 0.1254902, g: 0.0627451, b: 0, a: 1}
@@ -221,5 +221,5 @@ Material:
     - _SizeTracery: {r: 0.25, g: 0.75, b: 0, a: 0}
     - _Size_Tracery: {r: 0.25, g: 0.75, b: 0, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
-    - _Tailing: {r: 11, g: 11, b: 0, a: 0}
+    - _Tailing: {r: 14, g: 10, b: 0, a: 0}
   m_BuildTextureStacks: []

@@ -1,5 +1,5 @@
 <div align="center"> 
-<a href="https://play.unity.com/en/games/a7e8551a-37ed-4dcb-ab0b-3bcbda7a4e61/probe-a">
+<a href="https://play.unity.com/en/games/a7e8551a-37ed-4dcb-ab0b-3bcbda7a4e61/probe-a" target="_blank">
 <img src="img/Cover_eng.png" alt="Cover" title="Probe-A" width="500" > 
 </a>
 </div>
@@ -15,7 +15,7 @@ Ready to get to work?
 <hr>
 
 <div align="center"> 
-<a href="https://youtu.be/PAt1jUSjHBM">
+<a href="https://youtu.be/PAt1jUSjHBM" target="_blank">
 <img src="img/YouTube_gif.gif" alt="YouTube" title="YouTube" width="522"> 
 </a>
 </div>
@@ -23,7 +23,7 @@ Ready to get to work?
 <br>
 
 <div align="center"> 
-<a href="https://play.unity.com/en/games/a7e8551a-37ed-4dcb-ab0b-3bcbda7a4e61/probe-a">
+<a href="https://play.unity.com/en/games/a7e8551a-37ed-4dcb-ab0b-3bcbda7a4e61/probe-a" target="_blank">
 <img src="img/PlayButton.png" alt="Play" title="Play"> 
 </a>
 </div>

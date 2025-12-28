@@ -129,7 +129,7 @@ Material:
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _SPECULARHIGHLIGHTS_OFF: 1
-    - _Seed: 583.7538
+    - _Seed: 455.34894
     - _SizeTile: 0.75
     - _Smoothness: 0.3
     - _SmoothnessTextureChannel: 0
@@ -144,7 +144,7 @@ Material:
     m_Colors:
     - _BaseColor: {r: 0.6509804, g: 0.6509804, b: 0.3529412, a: 1}
     - _Border: {r: 0.0375, g: 0.0375, b: 0, a: 0}
-    - _Color: {r: 0.3529412, g: 0.6509804, b: 0.3529412, a: 1}
+    - _Color: {r: 0.3529412, g: 0.47843137, b: 0.3137255, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _Tailing: {r: 2, g: 2, b: 0, a: 0}

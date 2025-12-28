@@ -15,17 +15,16 @@ public class SettingsGame : Singleton<SettingsGame>
     public float MinValue => audioMinValue;
     public float MaxValue => audioMaxValue;
 
+    public bool IsFirstStart { get; set; } = true;
     public bool IsScreenStick { get => _profileCurrent.isScreenStick; set => _profileCurrent.isScreenStick = value; }
 
     private const float audioMinValue = 0.01f;
     private const float audioMaxValue = 1.5845f;
 
-    private YandexSDK _ysdk;
     private Localization _localization;
 
     public bool Initialize(bool isLoad)
     {
-        _ysdk = YandexSDK.InstanceF;
         _localization = Localization.InstanceF;
 
         bool result = false;
@@ -91,10 +90,6 @@ public class SettingsGame : Singleton<SettingsGame>
     private void DefaultProfile()
     {
         _profileCurrent = _profileDesktop.Clone();
-
-        if (_ysdk.IsInitialize)
-            if (_localization.TryIdFromCode(_ysdk.Lang, out int id))
-                _profileCurrent.idLang = id;
     }
 
     private void Apply()

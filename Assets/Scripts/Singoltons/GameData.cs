@@ -84,8 +84,10 @@ public class GameData : Singleton<GameData>
         ScoreReward = 0;
     }
 
-    public void NextLevel(float addExp, int addScore)
+    public void NextLevel(float hpForCompletion, float addExp, int addScore)
     {
+        _dataSave.HpCurrent += _playerStates.HP * hpForCompletion;
+
         ExpReward = (int)Mathf.Round(addExp);
         ScoreReward = addScore;
 

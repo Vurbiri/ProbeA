@@ -1,11 +1,8 @@
-using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class StartMenu : MenuNavigation
 {
-    [Space]
-    [SerializeField] private LeaderboardGUI _leaderboard;
     [Space]
     [SerializeField] private int _sceneGame = 4;
 
@@ -29,19 +26,12 @@ public class StartMenu : MenuNavigation
 
     public void OnNew()
     {
-        NewAsync().Forget();
+        LoadScene game = new(_sceneGame);
+        game.Start();
 
-        async UniTaskVoid NewAsync()
-        {
-            LoadScene game = new(_sceneGame);
-            game.Start();
+        _gameData.CreateNewGameData();
+        _gameData.Save(true);
 
-            if (YandexSDK.Instance.IsLeaderboard)
-                await _leaderboard.TrySetScoreAndReward(_gameData.Score, false);
-            _gameData.CreateNewGameData();
-            _gameData.Save(true);
-
-            game.End();
-        }
+        game.End();
     }
 }

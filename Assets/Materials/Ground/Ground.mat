@@ -133,7 +133,7 @@ Material:
     - _ColorsStrength: 0.4
     - _Cull: 2
     - _Cutoff: 0.5
-    - _Density: 1.4549658
+    - _Density: 1.636297
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DirtBorderScale: 9.03
@@ -179,7 +179,7 @@ Material:
     - _SPECULAR: 0
     - _SPECULARHIGHLIGHTS_OFF: 1
     - _Seam_Ton: 0.15
-    - _Seed: 654.32294
+    - _Seed: 870.4716
     - _Shading: 0.35
     - _ShadingStrength: 0.4
     - _SidesTracery: 6
@@ -205,7 +205,7 @@ Material:
     - _Base_Offset: {r: 0, g: 0, b: 0, a: 0}
     - _Base_Tailing: {r: 30, g: 20, b: 0, a: 0}
     - _Border: {r: 0.06666667, g: 0.1, b: 0, a: 0}
-    - _Color: {r: 0.3529412, g: 0.6509804, b: 0.3529412, a: 1}
+    - _Color: {r: 0.50980395, g: 0.50980395, b: 0.29411766, a: 1}
     - _ColorBase: {r: 0.6509804, g: 0.6509804, b: 0.3529412, a: 1}
     - _ColorBaseOne: {r: 0.6509804, g: 0.6509804, b: 0.3529412, a: 1}
     - _ColorSeam: {r: 0.1254902, g: 0.0627451, b: 0, a: 1}

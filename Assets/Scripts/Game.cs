@@ -11,6 +11,8 @@ public class Game : Singleton<Game>
     [Space]
     [SerializeField] private int _timeAutosave = 30;
     [Space]
+    [SerializeField,Range(0f, 1f)] private float _hpForCompletion = 0.1f;
+    [Space]
     [SerializeField] private float _baseExp = 14f;
     [SerializeField] private float _baseScore = 500f;
     [SerializeField] private float _gameCompletedBonus = 500f;
@@ -152,7 +154,7 @@ public class Game : Singleton<Game>
     {
         GameStop();
         var (addExp, addScore) = AddExpAndScore(_gameData.MaxArtefacts);
-        _gameData.NextLevel(addExp, addScore);
+        _gameData.NextLevel(_hpForCompletion, addExp, addScore);
         EventLevelCompleted?.Invoke();
         GameSave();
     }
@@ -160,7 +162,7 @@ public class Game : Singleton<Game>
     public void LevelCompletedCheat()
     {
         GameStop();
-        _gameData.NextLevel(0, 0);
+        _gameData.NextLevel(0f, 0f, 0);
         EventLevelCompleted?.Invoke();
         GameSave();
         Continue();

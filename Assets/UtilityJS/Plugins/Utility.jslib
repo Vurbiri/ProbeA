@@ -10,28 +10,6 @@ var UtilityPlugin =
         console.error(UTF8ToString(msg));
     },
 
-    IsAccelerometerJS: function () {
-        try {
-            navigator.permissions.query({name: 'accelerometer'})
-                .then((result) => {
-                    if (result.state === "granted") {
-						console.log("++ IsAccelerometerJS: true ++");
-                        window.unityInstance.SendMessage('UtilityJS', 'OnEndIsAccelerometer', 1);
-                    } else {
-                        console.log("-- IsAccelerometerJS: false --");
-						window.unityInstance.SendMessage('UtilityJS', 'OnEndIsAccelerometer', 0);
-                    }
-				})
-				.catch((message) => {
-					console.log("-- IsAccelerometerJS: " + message + " --");
-					window.unityInstance.SendMessage('UtilityJS', 'OnEndIsAccelerometer', 0);
-				});
-        } catch (message) {
-            console.log("-- IsAccelerometerJS: " + message + " --");
-			window.unityInstance.SendMessage('UtilityJS', 'OnEndIsAccelerometer', 0);
-        }
-    },
-
     SetStorageJS: function (key, data) {
         try {
             var sKey = UTF8ToString(key);
@@ -135,15 +113,27 @@ var UtilityPlugin =
         console.log("== GetCookies: " + isCookieEnabled + " ++");
         return isCookieEnabled;
     },
+	
+	$func: {
+        isEmpty: function (obj) {
+            if (!obj) return true;
 
-    QuitJS: function (url) {
-        window.unityInstance
-            .Quit()
-            .then(() => {
-                window.location.replace(UTF8ToString(url));
-        });
+            return Object.keys(obj).length === 0;
+        },
+		
+		toUnityString: function (returnStr) {
+            if (func.isEmpty(returnStr))
+                return null;
+
+            var bufferSize = lengthBytesUTF8(returnStr) + 1;
+            var buffer = _malloc(bufferSize);
+            stringToUTF8(returnStr, buffer, bufferSize);
+            return buffer;
+        },
     },
+
 }
 
+autoAddDeps(UtilityPlugin, '$func');
 mergeInto(LibraryManager.library, UtilityPlugin);
 

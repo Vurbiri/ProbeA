@@ -23,14 +23,19 @@ public static class Storage
     }
     public static bool StoragesCreate()
     {
-        if (Create<JsonToYandex>())
-            return true;
-
         if (Create<JsonToLocalStorage>())
             return true;
 
         if (Create<JsonToCookies>())
             return true;
+
+#if UNITY_EDITOR
+        if (Create<JsonToFile>())
+            return true;
+
+        if (Create<JsonToPlayerPrefs>())
+            return true;
+#endif
 
         Create<EmptyStorage>();
         return false;
